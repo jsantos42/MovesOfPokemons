@@ -1,0 +1,19 @@
+/* Note: align-items will shorten the inner container, unless we define
+ its width */
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /*align-content: center;*/
+  /*width: 100%;*/
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.app input {
+  box-shadow: inset 0 0 1px black;
+  background: transparent;
+  text-align: center;
+}

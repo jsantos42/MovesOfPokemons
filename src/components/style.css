@@ -1,0 +1,45 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #70a470;
+    box-shadow: 0 0 15px black;
+    transition: transform 1s;
+    padding: 0 1rem;
+    height: 300px;
+    box-sizing: border-box; /* this prevents the size of the div to
+                            change when the content changes, because
+                            it will already account with padding */
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    max-width: 200px;
+}
+
+.moves {
+    width: 100%;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.moves div {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background: #70a470;
+}
+
+.moves ul {
+    columns: 2;
+    column-gap: 1rem;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-size: 0.9rem;
+    list-style: none;
+}
